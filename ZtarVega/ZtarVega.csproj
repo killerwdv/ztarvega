@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0451CBF3-FFFD-4BFE-810C-D01ED426F2C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZtarVega</RootNamespace>
+    <AssemblyName>ZtarVega</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ZtarVega.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\ImageSourceSetting.cs" />
+    <Compile Include="Services\ImageDownloader.cs" />
+    <Compile Include="Services\ImageDownloadResult.cs" />
+    <Compile Include="Services\ImageDownloadScope.cs" />
+    <Compile Include="Services\ImageFetchResult.cs" />
+    <Compile Include="Services\ImageFetchStatus.cs" />
+    <Compile Include="Services\ImageUrlTemplate.cs" />
+    <Compile Include="Services\SetupGuideStatus.cs" />
+    <Compile Include="Services\SetupStep.cs" />
+    <Compile Include="Services\StartupProfiler.cs" />
+    <Compile Include="Services\TemplateProblem.cs" />
+    <Compile Include="UI\Actions\DownloadActions.cs" />
+    <Compile Include="UI\Actions\GameActions.cs" />
+    <Compile Include="UI\Actions\GuideActions.cs" />
+    <Compile Include="UI\Actions\ImportActions.cs" />
+    <Compile Include="UI\Actions\MainWindowActions.cs" />
+    <Compile Include="UI\Actions\SettingsActions.cs" />
+    <Compile Include="UI\Actions\ViewActions.cs" />
+    <Compile Include="Data\DatabaseConnectionFactory.cs" />
+    <Compile Include="Data\DatabaseInitializer.cs" />
+    <Compile Include="Data\DevelopmentSeeder.cs" />
+    <Compile Include="Data\GameRepository.cs" />
+    <Compile Include="Data\IGameRepository.cs" />
+    <Compile Include="Localization\EnglishTexts.cs" />
+    <Compile Include="Localization\LanguageFileReader.cs" />
+    <Compile Include="Localization\LanguageInfo.cs" />
+    <Compile Include="Localization\LanguageTemplateWriter.cs" />
+    <Compile Include="Localization\Localizer.cs" />
+    <Compile Include="Models\AppSettings.cs" />
+    <Compile Include="Models\GameFilterMode.cs" />
+    <Compile Include="Models\GameLink.cs" />
+    <Compile Include="Models\GameMetadataUpdate.cs" />
+    <Compile Include="Models\GameRomUpdate.cs" />
+    <Compile Include="Models\ListFilterState.cs" />
+    <Compile Include="Models\TitleFormatter.cs" />
+    <Compile Include="Services\AssetLocator.cs" />
+    <Compile Include="Services\ClrMameProReader.cs" />
+    <Compile Include="Services\Crc32Calculator.cs" />
+    <Compile Include="Services\DatCatalogImporter.cs" />
+    <Compile Include="Services\DatEntry.cs" />
+    <Compile Include="Services\DatFileReader.cs" />
+    <Compile Include="Services\DatImportResult.cs" />
+    <Compile Include="Services\DevelopmentAssetGenerator.cs" />
+    <Compile Include="Services\EmulatorLauncher.cs" />
+    <Compile Include="Services\ErrorLogger.cs" />
+    <Compile Include="Services\GameCatalog.cs" />
+    <Compile Include="Services\GameImageIndex.cs" />
+    <Compile Include="Services\GameMetadata.cs" />
+    <Compile Include="Services\GameQuery.cs" />
+    <Compile Include="Services\ImageCache.cs" />
+    <Compile Include="Services\ImageFolderImporter.cs" />
+    <Compile Include="Services\ImageFolderImportResult.cs" />
+    <Compile Include="Services\ImageImporter.cs" />
+    <Compile Include="Services\ImageMatch.cs" />
+    <Compile Include="Services\ImageMatchKind.cs" />
+    <Compile Include="Services\ImageTarget.cs" />
+    <Compile Include="Services\LaunchFailure.cs" />
+    <Compile Include="Services\LaunchResult.cs" />
+    <Compile Include="Services\MetadataEntry.cs" />
+    <Compile Include="Services\MetadataImporter.cs" />
+    <Compile Include="Services\MetadataImportResult.cs" />
+    <Compile Include="Services\MetadataIndex.cs" />
+    <Compile Include="Services\NameKey.cs" />
+    <Compile Include="Services\RomImporter.cs" />
+    <Compile Include="Services\RomImportResult.cs" />
+    <Compile Include="Services\RomScanner.cs" />
+    <Compile Include="Services\RomTitleParser.cs" />
+    <Compile Include="Services\ScannedRom.cs" />
+    <Compile Include="Services\ScanProgress.cs" />
+    <Compile Include="Services\ScanResult.cs" />
+    <Compile Include="Services\SettingsService.cs" />
+    <Compile Include="Services\SettingsSession.cs" />
+    <Compile Include="Services\UnmatchedRom.cs" />
+    <Compile Include="Services\ZipRomReader.cs" />
+    <Compile Include="UI\BaseGamePickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameArtworkPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\GameDetailsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\GameEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameEventArgs.cs" />
+    <Compile Include="UI\GameImagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ImageDownloadOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImageFolderImportOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\IMainView.cs" />
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\GameRegion.cs" />
+    <Compile Include="Models\RomType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MessageDialogs.cs" />
+    <Compile Include="UI\MetadataImportOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NativeTheme.cs" />
+    <Compile Include="UI\ScanProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetupGuideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ThemedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ThemeManager.cs" />
+    <Compile Include="UI\ThemePalette.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="languages\es.lang">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ZtarVega.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>

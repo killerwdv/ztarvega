@@ -1,0 +1,327 @@
+﻿# Traducción al español de ZtarVega
+language.name = Español
+language.author = ZtarVega
+
+# app
+app.alreadyRunning = ZtarVega ya se está ejecutando.
+app.unexpectedError = ZtarVega tuvo un problema inesperado y debe cerrarse.\n\nLos detalles técnicos se guardaron en:\n{0}
+
+# common
+common.ok = Aceptar
+common.cancel = Cancelar
+common.browse = Examinar...
+common.choose = Elegir...
+common.clear = Borrar
+common.remove = Quitar
+common.select = Seleccionar
+
+# menu
+menu.game = &Juego
+menu.game.add = &Agregar juego...
+menu.game.edit = &Editar juego...
+menu.game.setImages = Configurar &imágenes...
+menu.game.delete = E&liminar juego...
+menu.game.toggleFavorite = Alternar &favorito
+menu.tools = &Herramientas
+menu.tools.importDat = Importar &catálogo desde DAT...
+menu.tools.importMetadata = Importar &metadatos...
+menu.tools.importImages = Importar imá&genes desde carpeta...
+menu.tools.scanRoms = &Escanear ROMs...
+menu.tools.settings = &Ajustes...
+menu.help = A&yuda
+menu.help.about = &Acerca de ZtarVega
+
+# list
+list.search.placeholder = Buscar juegos...
+list.filter.all = Todos los juegos
+list.filter.available = Solo disponibles
+list.filter.favorites = Favoritos
+list.filter.recent = Jugados recientemente
+list.region.all = Todas las regiones
+list.genre.all = Todos los géneros
+list.hideAlternates = Ocultar versiones alternativas
+list.hideAlternates.tip = Oculta las versiones regionales y las revisiones de un juego que ya aparece en la lista.\nLos juegos de los que tienes la ROM siempre se muestran.
+list.count = {0:N0} juego(s)
+list.column.title = Título
+list.column.year = Año
+
+# region
+region.world = Mundial
+region.usa = EE. UU.
+region.japan = Japón
+region.europe = Europa
+region.other = Otra
+
+# romtype
+romtype.original = Original
+romtype.hack = Hack
+romtype.bootleg = Pirata
+romtype.translation = Traducción
+romtype.homebrew = Homebrew
+romtype.prototype = Prototipo
+romtype.unlicensed = Sin licencia
+
+# details
+details.field.year = Año
+details.field.region = Región
+details.field.language = Idioma
+details.field.romType = Tipo de ROM
+details.field.developer = Desarrollador
+details.field.players = Jugadores
+details.field.tags = Etiquetas
+details.noLogo = Sin logo
+details.noScreenshots = No hay capturas disponibles
+details.noGame = Ningún juego seleccionado
+
+# artwork
+artwork.noBoxArt = Sin portada
+artwork.noCartridge = Sin imagen del cartucho
+artwork.play = JUGAR
+artwork.favorite.add = Agregar a favoritos
+artwork.favorite.remove = Quitar de favoritos
+
+# settings
+settings.title = Ajustes
+settings.emulator = Emulador
+settings.arguments = Argumentos
+settings.argumentsHint = Usa {0} donde debe ir la ruta de la ROM. Las opciones adicionales (como la pantalla completa) se describen en la documentación de tu emulador.
+settings.romsFolder = Carpeta de ROMs
+settings.theme = Tema
+settings.theme.dark = Oscuro
+settings.theme.light = Claro
+settings.language = Idioma
+settings.restartHint = Reinicia ZtarVega para aplicar por completo el tema y el idioma.
+settings.error.emulatorMissing = El archivo del emulador no existe.
+settings.error.argumentsPlaceholder = Los argumentos deben contener {0}.
+settings.error.romsFolderMissing = La carpeta de ROMs no existe.
+settings.browseEmulator.title = Selecciona el emulador
+settings.browseEmulator.filter = Archivos ejecutables (*.exe)|*.exe|Todos los archivos (*.*)|*.*
+settings.browseRomsFolder.description = Selecciona la carpeta que contiene tus archivos de ROM.
+
+# edit
+edit.title.add = Agregar juego
+edit.title.edit = Editar juego
+edit.field.title = Título
+edit.field.baseGame = Juego base
+edit.field.romFilename = Nombre del archivo de la ROM
+edit.baseGame.none = (ninguno)
+edit.error.title = El título no puede estar vacío.
+edit.error.year = El año debe ser un número entre {0} y {1}, o quedar vacío.
+edit.error.players = La cantidad de jugadores debe estar entre 1 y {0}, o quedar vacía.
+edit.error.romFilename = El nombre del archivo de la ROM debe ser solo un nombre de archivo, sin ruta de carpeta.
+
+# images
+images.title = Imágenes - {0}
+images.slot.boxArt = Portada
+images.slot.cartridge = Cartucho
+images.slot.logo = Logo
+images.slot.screenshot = Captura {0}
+images.noImage = Sin imagen
+images.status.new = Imagen nueva (se guarda al presionar Aceptar)
+images.status.current = Imagen actual
+images.status.inherited = Heredada de {0}
+images.status.inheritedAfterSaving = Heredada de {0} (después de guardar)
+images.status.willBeRemoved = Se quitará
+images.chooseTitle = Selecciona una imagen para: {0}
+images.chooseFilter = Imágenes (*.png;*.jpg;*.jpeg;*.bmp;*.gif)|*.png;*.jpg;*.jpeg;*.bmp;*.gif|Todos los archivos (*.*)|*.*
+images.error.invalidImage = El archivo seleccionado no es una imagen válida.
+images.error.saveFailed = No se pudieron guardar las imágenes.\n\n{0}
+
+# picker
+picker.title = Elegir el juego base
+picker.limited = Se muestran los primeros {0} resultados. Escribe más para acotar la búsqueda.
+picker.count = {0} resultado(s)
+
+# metadataOptions
+metadataOptions.title = Importar metadatos
+metadataOptions.intro = Se seleccionaron {0} archivo(s). ¿Qué debe pasar con los juegos que ya tienen datos?
+metadataOptions.fillEmpty = Completar solo los campos vacíos (recomendado)
+metadataOptions.fillEmptyHint = Se conservan los valores que ingresaste o importaste antes.
+metadataOptions.replace = Reemplazar los valores encontrados en los archivos
+metadataOptions.replaceHint = Sobrescribe el año, el desarrollador y las etiquetas de todos los juegos que los archivos conocen, incluidos los valores que ingresaste a mano. Las etiquetas se reemplazan por el género.
+
+# imageFolder
+imageFolder.title = Importar imágenes desde una carpeta
+imageFolder.folder = Carpeta
+imageFolder.imageType = Tipo de imagen
+imageFolder.intro = Cada imagen se asocia a un juego por el nombre de su archivo, y un informe lista los archivos que no se pudieron asociar. Consejo: usa "{0}" para capturas de partida y "{1}" para pantallas de título.
+imageFolder.fillEmpty = Completar solo los juegos que no tienen imagen de este tipo (recomendado)
+imageFolder.fillEmptyHint = Se conservan las imágenes que elegiste antes.
+imageFolder.replace = Reemplazar las imágenes de los juegos encontrados en la carpeta
+imageFolder.replaceHint = Sobrescribe la imagen existente de este tipo, incluidas las que elegiste a mano.
+imageFolder.includeModified = Incluir imágenes de hacks y traducciones
+imageFolder.includeModifiedHint = Se asignan a los hacks y traducciones de tu catálogo que tengan el mismo título. Si no tienes ninguno, quedan listadas en el informe.
+imageFolder.error.folderMissing = La carpeta no existe.
+imageFolder.browseDescription = Selecciona la carpeta que contiene las imágenes.
+
+# progress
+progress.preparing = Preparando...
+progress.cancelling = Cancelando...
+progress.scan.title = Escaneando ROMs
+progress.scan.format = Revisando {0} de {1}: {2}
+progress.images.title = Importando imágenes
+progress.images.format = Importando {0} de {1}: {2}
+
+# main
+main.restart.question = El nuevo tema o idioma se aplica por completo al reiniciar ZtarVega.\n\n¿Quieres reiniciar ahora?
+main.restart.failed = No se pudo reiniciar ZtarVega. Ábrelo de nuevo manualmente.
+main.askSettings = {0}\n\n¿Quieres abrir los ajustes ahora?
+main.settingsSaveWarning = No se pudieron guardar los ajustes y solo se aplicarán hasta que cierres la aplicación.\n\n{0}
+main.favorite.saveFailed = No se pudo guardar el favorito.\n\n{0}
+main.game.addFailed = No se pudo agregar el juego.
+main.game.saveFailed = No se pudieron guardar los cambios.
+main.game.deleteFailed = No se pudo eliminar el juego.
+main.game.deleteConfirm = ¿Eliminar "{0}" del catálogo?\n\nTu archivo de ROM y tus imágenes no se borran.
+
+# launch
+launch.error.emulatorNotConfigured = El emulador no está configurado o su archivo ya no existe.
+launch.error.romsFolderNotConfigured = La carpeta de ROMs no está configurada o ya no existe.
+launch.error.noRomFilename = Este juego no tiene un nombre de archivo de ROM registrado.
+launch.error.romFileNotFound = El archivo "{0}" no se encontró en la carpeta de ROMs.
+launch.error.startFailed = No se pudo iniciar el emulador: {0}
+launch.error.romNotInArchive = La ROM no se encontró dentro de "{0}". Vuelve a escanear tus ROMs.
+launch.error.zipUnreadable = No se pudo leer el archivo ZIP: {0}
+launch.error.extractFailed = No se pudo extraer la ROM: {0}
+
+# scan
+scan.cancelled = Se canceló el escaneo. No se hicieron cambios.
+scan.error = No se pudo completar el escaneo. No se hicieron cambios.\n\n{0}
+scan.error.folderMissing = La carpeta de ROMs no existe: {0}
+scan.summary.finished = Escaneo terminado.
+scan.summary.filesFound = Archivos de ROM encontrados: {0}
+scan.summary.available = Juegos disponibles: {0}
+scan.summary.newlyAvailable = Nuevos disponibles: {0}
+scan.summary.noLongerAvailable = Ya no disponibles: {0}
+scan.summary.unmatched = Archivos que no corresponden a ningún juego: {0}
+scan.summary.duplicates = Archivos duplicados ignorados: {0}
+scan.summary.unreadable = Archivos ilegibles: {0}
+scan.addUnmatched.question = ¿Quieres agregar al catálogo los {0} archivo(s) sin juego?
+scan.import.failed = No se pudieron agregar los juegos. No se hicieron cambios.\n\n{0}
+scan.import.skipped = Se omitieron {0} archivo(s) porque duplican un juego existente.
+scan.import.linked = {0} se vincularon a un juego base automáticamente (puedes cambiarlo con Juego > Editar juego).
+
+# import
+import.gamesAdded = Se agregaron {0} juego(s) al catálogo.
+import.alreadyInCatalog = {0} ya estaban en el catálogo.
+import.ignored = Se ignoraron {0} entradas (archivos BIOS, complementos y otras entradas que no son juegos).
+import.linked = {0} versión(es) vinculadas a la versión principal de su juego (comparten sus imágenes y datos).
+import.scanHint = Configura tu carpeta de ROMs en Herramientas > Ajustes y usa Herramientas > Escanear ROMs para ver qué juegos tienes.
+import.scanQuestion = ¿Quieres escanear ahora tu carpeta de ROMs para ver qué juegos tienes?
+
+# dat
+dat.dialogTitle = Selecciona un archivo DAT
+dat.filter = Archivos DAT (*.dat;*.xml)|*.dat;*.xml|Todos los archivos (*.*)|*.*
+dat.error = No se pudo importar el catálogo. No se hicieron cambios.\n\n{0}
+dat.error.notDatFile = El archivo no es un archivo DAT.
+dat.error.notValid = El archivo no es un archivo DAT válido.
+dat.error.noGames = No se encontraron juegos con checksum en el archivo DAT.
+
+# metadata
+metadata.dialogTitle = Selecciona los archivos de metadatos (selecciónalos todos a la vez)
+metadata.filter = Archivos de metadatos (*.dat)|*.dat|Todos los archivos (*.*)|*.*
+metadata.error = No se pudieron importar los metadatos. No se hicieron cambios.\n\n{0}
+metadata.error.endedUnexpectedly = El archivo terminó de forma inesperada.
+metadata.error.notValid = El archivo no es un archivo de metadatos válido.
+metadata.error.noGames = No se encontraron juegos en el archivo "{0}".
+metadata.summary.entries = Entradas leídas de los archivos: {0}
+metadata.summary.matched = Juegos con datos coincidentes: {0} de {1}
+metadata.summary.inherited = Juegos completados desde su juego base: {0}
+metadata.summary.updated = Juegos actualizados: {0}
+metadata.summary.replaced = Los valores existentes se reemplazaron por los encontrados en los archivos.
+metadata.summary.filled = Solo se completaron los campos vacíos; se conservaron los datos que ingresaste tú.
+
+# imageImport
+imageImport.cancelled = Se canceló la importación. Se conservaron las imágenes guardadas hasta ahora.
+imageImport.finished = La importación terminó.
+imageImport.type = Tipo de imagen: {0}
+imageImport.filesFound = Archivos encontrados: {0}
+imageImport.saved = Imágenes guardadas: {0}
+imageImport.alreadyHad = Juegos que ya tenían imagen (se conservaron): {0}
+imageImport.unmatched = Sin juego asociado: {0}
+imageImport.ambiguous = Ambiguas (varios juegos posibles): {0}
+imageImport.skippedModified = Omitidas (hacks y traducciones): {0}
+imageImport.duplicates = Duplicadas omitidas: {0}
+imageImport.failed = Con error: {0}
+imageImport.reportQuestion = Se guardó un informe detallado. ¿Quieres abrirlo?
+imageImport.reportOpenFailed = No se pudo abrir el informe. Está guardado en:\n{0}
+imageImport.error = No se pudieron importar las imágenes.\n\n{0}
+imageImport.error.invalidImage = El archivo "{0}" no es una imagen válida.
+imageImport.error.folderNotFound = La carpeta no existe: {0}
+
+# about
+about.title = Acerca de {0}
+about.description = Un frontend de código abierto y liviano para tu propia colección de juegos.\n\nZtarVega no incluye, distribuye ni fomenta la descarga de ROMs ni de otro material protegido por derechos de autor, y no incluye ni recomienda ninguna fuente de ROMs, listas de juegos o imágenes.\n\nNES es una marca registrada de Nintendo. ZtarVega no está afiliado ni respaldado por Nintendo.
+
+# zip
+zip.error.entryTooLarge = Un archivo dentro del ZIP es más grande de lo que puede ser una ROM.
+
+# download
+menu.tools.downloadImages = &Descargar imágenes...
+download.title = Descargar imágenes
+download.intro = ZtarVega descarga las imágenes de un sitio web que tú eliges. No incluye ni recomienda ninguna fuente: usa una que tengas permitido usar y respeta sus términos de uso.
+download.imageType = Tipo de imagen
+download.address = Dirección
+download.addressHint = Escribe la dirección web de las imágenes y usa estas palabras donde va el nombre del juego: {0} (el nombre del juego tal como aparece en el catálogo), {1} (el mismo nombre con los caracteres que un nombre de archivo no puede tener reemplazados por _) y {2} (el checksum del juego). Ejemplo: {3}
+download.scope.available = Solo los juegos que tengo (recomendado)
+download.scope.all = Todos los juegos del catálogo (puede tardar mucho)
+download.scope.selected = Solo el juego seleccionado
+download.mode.fillEmpty = Descargar solo las imágenes que los juegos todavía no tienen (recomendado)
+download.mode.replace = Reemplazar las imágenes que los juegos ya tienen
+download.test = Probar con un juego
+download.test.testing = Probando...
+download.test.noGame = No hay ningún juego con el que probar.
+download.test.ok = Se encontró la imagen ({0} KB).
+download.test.notFound = No encontrada: el sitio respondió que esa imagen no existe.
+download.test.notAnImage = El sitio respondió, pero el archivo no es una imagen.
+download.test.tooLarge = El archivo es demasiado grande para ser una imagen.
+download.test.networkError = Falló la conexión: {0}
+download.test.invalidUrl = La dirección no es válida.
+download.test.noChecksum = Este juego no tiene checksum y la dirección lo necesita.
+download.test.address = Dirección probada:
+download.start = Descargar
+download.error.templateEmpty = Escribe la dirección de las imágenes.
+download.error.templateScheme = La dirección debe empezar con http:// o https://.
+download.error.templatePlaceholder = La dirección debe contener {0}, {1} o {2}, para que cada juego tenga su propia dirección.
+download.noGames = No hay juegos en esa selección. Escanea tus ROMs primero o elige otra opción.
+download.confirmMany = Se pedirán hasta {0} imágenes al sitio web, una por una. Puede tardar mucho y puedes cancelar en cualquier momento. ¿Quieres continuar?
+download.summary.cancelled = Se canceló la descarga. Se conservaron las imágenes guardadas hasta ahora.
+download.summary.finished = La descarga terminó.
+download.summary.aborted = La descarga se detuvo porque la conexión falló varias veces seguidas. Revisa tu conexión a internet y la dirección.
+download.summary.type = Tipo de imagen: {0}
+download.summary.games = Juegos en la selección: {0}
+download.summary.saved = Imágenes descargadas: {0}
+download.summary.alreadyHad = Juegos que ya tenían la imagen (se conservaron): {0}
+download.summary.notFound = No encontradas en el sitio: {0}
+download.summary.notAnImage = Respuestas que no eran imágenes: {0}
+download.summary.noChecksum = Juegos sin checksum (omitidos): {0}
+download.summary.failed = Con error: {0}
+download.summary.exampleNotFound = Ejemplo de una dirección que no se encontró:\n{0}
+download.summary.reportQuestion = Se guardó un informe detallado. ¿Quieres abrirlo?
+download.error = No se pudieron descargar las imágenes.\n\n{0}
+progress.download.title = Descargando imágenes
+progress.download.format = Descargando {0} de {1}: {2}
+
+# guide
+menu.help.guide = &Primeros pasos...
+guide.title = Primeros pasos
+guide.intro = Sigue estos pasos en orden. Un paso se activa cuando están hechos los anteriores, y el siguiente que debes hacer está marcado con una flecha. Puedes cerrar esta ventana en cualquier momento y abrirla de nuevo desde Ayuda > Primeros pasos.
+guide.step.settings.title = 1. Elige tu emulador y tu carpeta de ROMs
+guide.step.settings.text = ZtarVega no ejecuta los juegos por sí mismo: inicia el emulador que tú elijas. Elige el programa del emulador (por ejemplo FCEUX o Mesen) y la carpeta donde están tus archivos de ROM.
+guide.step.settings.button = Abrir los ajustes
+guide.step.catalog.title = 2. Carga el catálogo de juegos
+guide.step.catalog.text = El catálogo es la lista de todos los juegos que existen, para que puedas verlos aunque no los tengas. Sale de un archivo DAT: una lista de juegos publicada por proyectos de preservación de ROMs (por ejemplo, el DAT de NES sin cabecera del proyecto No-Intro). ZtarVega no lo incluye: descárgalo tú y revisa sus términos de uso.
+guide.step.catalog.button = Elegir el archivo DAT...
+guide.step.scan.title = 3. Averigua qué juegos tienes
+guide.step.scan.text = ZtarVega revisa tu carpeta de ROMs y marca los juegos que tienes. Los reconoce por su contenido, así que no importa cómo se llamen los archivos, y también lee archivos ZIP.
+guide.step.scan.button = Escanear mis ROMs
+guide.step.metadata.title = 4. Completa la información de los juegos (opcional)
+guide.step.metadata.text = Agrega el año, el desarrollador y el género a los juegos, usando archivos de metadatos que descargas tú (selecciónalos todos a la vez).
+guide.step.metadata.button = Elegir los archivos de metadatos...
+guide.step.images.title = 5. Consigue las imágenes de los juegos (opcional)
+guide.step.images.text = Portadas, cartuchos, logos y capturas. Puedes importarlas desde una carpeta que ya tengas, o descargarlas desde un sitio web que tú elijas.
+guide.step.images.importButton = Importar desde una carpeta...
+guide.step.images.downloadButton = Descargar desde un sitio web...
+guide.requires = Primero haz el paso {0}.
+guide.ready = Todo listo: selecciona un juego de la lista y presiona JUGAR. Puedes hacer los pasos opcionales cuando quieras.
+guide.showAtStartup = Mostrar esta ventana al iniciar ZtarVega mientras queden pasos
+guide.close = Cerrar

@@ -1,0 +1,115 @@
+[35mZtarVega/Data/DatabaseConnectionFactory.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Data/DatabaseInitializer.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Data/DevelopmentSeeder.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[m#if DEBUG
+[35mZtarVega/Data/GameRepository.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Data/IGameRepository.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Collections.Generic;
+[35mZtarVega/Localization/EnglishTexts.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Localization/LanguageFileReader.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Localization/LanguageInfo.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Localization/LanguageInfo.cs[m[36m:[m[32m18[m[36m:[m        /// <summary>The name of the language written in that language (for example "Espa[1;31mñ[mol").</summary>
+[35mZtarVega/Localization/LanguageTemplateWriter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.IO;
+[35mZtarVega/Localization/Localizer.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Models/AppSettings.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Models/Game.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Models/GameFilterMode.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/GameLink.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/GameMetadataUpdate.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/GameRegion.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/GameRomUpdate.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/ImageSourceSetting.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Runtime.Serialization;
+[35mZtarVega/Models/ListFilterState.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Models/RomType.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Models
+[35mZtarVega/Models/TitleFormatter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Text.RegularExpressions;
+[35mZtarVega/Program.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Properties/AssemblyInfo.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Reflection;
+[35mZtarVega/Properties/AssemblyInfo.cs[m[36m:[m[32m10[m[36m:[m[assembly: AssemblyCopyright("Copyright [1;31m©[m 2026")]
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[m//------------------------------------------------------------------------------
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m3[m[36m:[m//     Este c[1;31mó[mdigo fue generado por una herramienta.
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m4[m[36m:[m//     Versi[1;31mó[mn de runtime: 4.0.30319.42000
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m6[m[36m:[m//     Los cambios de este archivo pueden provocar un comportamiento inesperado y se perder[1;31má[mn si
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m7[m[36m:[m//     el c[1;31mó[mdigo se vuelve a generar.
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m18[m[36m:[m    // StronglyTypedResourceBuilder gener[1;31mó[m autom[1;31má[mticamente esta clase
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m19[m[36m:[m    // a trav[1;31mé[ms de una herramienta como ResGen o Visual Studio.
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m20[m[36m:[m    // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuaci[1;31mó[mn, vuelva a ejecutar ResGen
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m21[m[36m:[m    // con la opci[1;31mó[mn /str o recompile su proyecto de VS.
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m38[m[36m:[m        ///   Devuelve la instancia ResourceManager almacenada en cach[1;31mé[m utilizada por esta clase.
+[35mZtarVega/Properties/Resources.Designer.cs[m[36m:[m[32m56[m[36m:[m        ///   b[1;31mú[msquedas de recursos usando esta clase de recursos fuertemente tipados.
+[35mZtarVega/Properties/Settings.Designer.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[m//------------------------------------------------------------------------------
+[35mZtarVega/Services/AssetLocator.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ClrMameProReader.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/Crc32Calculator.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/DatCatalogImporter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/DatEntry.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/DatFileReader.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/DatImportResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/DevelopmentAssetGenerator.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[m#if DEBUG
+[35mZtarVega/Services/EmulatorLauncher.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ErrorLogger.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/GameCatalog.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/GameImageIndex.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/GameMetadata.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/GameQuery.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing ZtarVega.Models;
+[35mZtarVega/Services/ImageCache.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ImageDownloadResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageDownloadScope.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageDownloader.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ImageFetchResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageFetchStatus.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageFolderImportResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageFolderImporter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ImageImporter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ImageMatch.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing ZtarVega.Models;
+[35mZtarVega/Services/ImageMatchKind.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ImageTarget.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Collections.Generic;
+[35mZtarVega/Services/ImageUrlTemplate.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/LaunchFailure.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/LaunchResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/MetadataEntry.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/MetadataImportResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/MetadataImporter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/MetadataIndex.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/NameKey.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Text;
+[35mZtarVega/Services/RomImportResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/RomImporter.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/RomScanner.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/RomTitleParser.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ScanProgress.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/ScanResult.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ScannedRom.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/SettingsService.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/SettingsSession.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/SetupGuideStatus.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/SetupStep.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/StartupProfiler.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/TemplateProblem.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.Services
+[35mZtarVega/Services/UnmatchedRom.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/Services/ZipRomReader.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/DownloadActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/GameActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/GuideActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/ImportActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/MainWindowActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/SettingsActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/Actions/ViewActions.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/BaseGamePickerForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameArtworkPanel.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameDetailsPanel.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameEditForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameEventArgs.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameImagesForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/GameListPanel.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/IMainView.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Windows.Forms;
+[35mZtarVega/UI/ImageDownloadOptionsForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/ImageFolderImportOptionsForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/ImageView.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/MainForm.Designer.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[mnamespace ZtarVega.UI
+[35mZtarVega/UI/MainForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/MessageDialogs.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Windows.Forms;
+[35mZtarVega/UI/MetadataImportOptionsForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/NativeTheme.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/ScanProgressForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/SettingsForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/SetupGuideForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/ThemeManager.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
+[35mZtarVega/UI/ThemePalette.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System.Drawing;
+[35mZtarVega/UI/ThemedForm.cs[m[36m:[m[32m1[m[36m:[m[1;31m﻿[musing System;
