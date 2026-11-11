@@ -2,6 +2,13 @@
 
 A lightweight frontend / launcher for your own NES game collection on Windows, written in C# (Windows Forms).
 
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Windows_7_or_Later-blue)
+![Technology](https://img.shields.io/badge/C%23-.NET_Framework_4.8-purple)
+![UI](https://img.shields.io/badge/UI-Windows_Forms-lightgrey)
+![Database](https://img.shields.io/badge/Database-SQLite-lightblue)
+![Languages](https://img.shields.io/badge/Languages-English_and_Spanish-orange)
+
 > ZtarVega is an open-source game manager and frontend. It does not include,
 > distribute or encourage the download of ROMs or other copyrighted material,
 > and it does not include or recommend any source of ROMs or images.
