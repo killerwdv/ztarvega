@@ -4,7 +4,7 @@ A lightweight frontend / launcher for your own NES game collection on Windows, w
 
 > ZtarVega is an open-source game manager and frontend. It does not include,
 > distribute or encourage the download of ROMs or other copyrighted material,
-> and it does not include or recommend any source of ROMs, game lists or images.
+> and it does not include or recommend any source of ROMs or images.
 
 NES is a trademark of Nintendo. This project is not affiliated with or endorsed by Nintendo.
 
@@ -32,13 +32,13 @@ ZtarVega includes [System.Data.SQLite](https://system.data.sqlite.org/) and the 
 
 ## Getting started
 
-The first time you run ZtarVega, the **Getting started** window guides you through these steps in the right order. You can open it again from **Help > Getting started** (F1).
-1. Download the latest ZIP from the Releases page and extract it anywhere.
-2. Run `ZtarVega.exe`.
-3. Open **Tools > Settings** and choose your emulator, its arguments (use `{rom}` where the ROM path goes) and the folder that contains your ROM files.
-4. Build your catalog with **Tools > Import Catalog from DAT**, using a DAT file you downloaded (for example, the headerless NES DAT of the No-Intro project; check its terms of use).
-5. Use **Tools > Scan ROMs** to detect which games you have.
-6. Optional: **Tools > Import Metadata** and **Tools > Import Images from Folder** to complete the information of the games.
+1. Download the latest ZIP from the Releases page. If Windows warns you about the file, right-click the ZIP, choose **Properties** and tick **Unblock** *before* extracting it.
+2. Extract it anywhere and run `ZtarVega.exe`.
+3. The **Getting started** window opens by itself and guides you through the rest in the right order. You can open it again from **Help > Getting started** (F1). These are its steps:
+   1. **Tools > Settings**: choose your emulator, its arguments (use `{rom}` where the ROM path goes) and the folder that contains your ROM files.
+   2. **Tools > Import Catalog from DAT**: build your catalog with a DAT file that you downloaded (for example, the headerless NES DAT of the No-Intro project; check its terms of use).
+   3. **Tools > Scan ROMs**: detect which games you have.
+   4. Optional: **Tools > Import Metadata**, **Tools > Import Images from Folder** or **Tools > Download Images** to complete the information of the games.
 
 You must provide your own game files, DAT files and images: ZtarVega does not include any of them.
 
@@ -77,8 +77,10 @@ Use **Tools > Download Images** and write the address of the images, with these 
 | Placeholder | Replaced by |
 |---|---|
 | `{title}` | The name of the game as it appears in the catalog |
-| `{filetitle}` | The same name, with the characters that file names cannot have (`& * / : ` < > ? \ | "`) replaced by `_` |
+| `{filetitle}` | The same name, with the characters that file names cannot have replaced by `_` (listed below) |
 | `{crc32}` | The CRC32 checksum of the game's ROM |
+
+The characters replaced by `_` in `{filetitle}` are: `&` `*` `/` `:` `<` `>` `?` `\` `|` `"` and the backtick (`` ` ``).
 
 For example: `https://example.com/images/{filetitle}.png`. Use the **Test with a game** button to check the address before downloading.
 
@@ -96,6 +98,7 @@ ZtarVega does not include or recommend any image source. Images are usually prot
 - **Something went wrong.** Technical details are saved in `logs/ztarvega.log`.
 - **The program starts slowly on an old computer.** Start it with `ZtarVega.exe --profile`: it writes `logs/startup-timings.txt` with how long each step of the startup takes.
 - **An error about SQLite at startup.** Install the Microsoft Visual C++ Redistributable 2015-2022 (x86 or x64, according to your Windows).
+- **Windows says it protected your PC (SmartScreen).** ZtarVega is not digitally signed. Choose **More info > Run anyway**, or right-click the downloaded ZIP, open **Properties** and tick **Unblock** before extracting it. You can check the file against the SHA-256 shown in the release notes.
 
 ## Building from source
 
